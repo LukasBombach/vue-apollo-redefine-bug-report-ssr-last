@@ -6,14 +6,20 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "ssr:serve": "vue-cli-service ssr:serve",
+    "ssr:build": "vue-cli-service ssr:build",
+    "ssr:start": "cross-env NODE_ENV=production vue-cli-service ssr:serve --mode production"
   },
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "vue": "^2.5.17",
     "vue-apollo": "^3.0.0-beta.10",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.16"
   },
   "devDependencies": {
+    "@akryum/vue-cli-plugin-ssr": "^0.1.2",
     "@vue/cli-plugin-babel": "^3.0.0",
     "@vue/cli-plugin-eslint": "^3.0.0",
     "@vue/cli-plugin-unit-jest": "^3.0.0",
